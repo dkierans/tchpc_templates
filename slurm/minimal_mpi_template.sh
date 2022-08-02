@@ -4,7 +4,7 @@
 #SBATCH -t 01-02:03:00			# Job time 1 day, 2hrs, 3min
 #SBATCH -p compute			# Request from compute parition
 
-## Giving slurm-out something to think about
+## Can be seen in slurm-[#id].out 
 echo "Date              = $(date)"
 echo "Hostname          = $(hostname -s)"
 echo "Working Directory = $(pwd)"
