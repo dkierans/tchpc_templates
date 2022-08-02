@@ -1,0 +1,10 @@
+##
+# File: ssh/TODO
+# Author: Dylan Kierans (dkierans@tcd.ie)
+# Date: 2022-08-02
+##
+
+1. Bash script for ssh keygen
+2. Sample file for ssh commands
+	Copy file to/from rsync
+	Copy folder and content to/from rsync

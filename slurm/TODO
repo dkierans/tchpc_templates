@@ -1,0 +1,10 @@
+##
+# File: slurm/TODO
+# Author: Dylan Kierans (dkierans@tcd.ie)
+# Date: 2022-08-02
+##
+
+1. Sample sbatch files:
+	- Module loading
+	- MPI task
+	- Hybrid OMP & MPI task
