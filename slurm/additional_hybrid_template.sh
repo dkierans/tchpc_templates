@@ -26,4 +26,3 @@ export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
 
 # Run hybrid exe: (ntasks * cpus_per_tasks) total procs
 mpirun -n $SLURM_NTASKS hybrid_test.exe > output.txt
-
