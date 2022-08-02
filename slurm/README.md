@@ -1,8 +1,8 @@
 tchpc_templates/slurm
 ===
 
-This folder provides useful sample files for using queuing jobs using SLURM on Research IT clusters. Read more about slurm [here](https://slurm.schedmd.com/documentation.html). Files include:
- - minimal_mpi_template.sh:
+This folder provides useful sample files for queuing jobs using SLURM on Research IT clusters. Click here to read more about [SLURM](https://slurm.schedmd.com/documentation.html). Files include:
+ - minimal_mpi_template.sh:\n
 	Simple example of slurm batch file for running 32 mpi processes on 4 nodes.
  - minimal_hybrid_template.sh:
 	Simple example of slurm batch file for running 16 mpi processes, each with 2 omp threads on 4 nodes.
