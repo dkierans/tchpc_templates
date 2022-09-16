@@ -26,7 +26,7 @@ Instructions are quite simple. Used to avoid typing password when ssh-ing to a c
 Replace `cluster` with name of cluster (eg kelvin).
 Replace `id_rsa.pub` with `your_filename.pub` if non-default filename used above.
 	```bash
-	ssh-copy-id ~/.ssh/id_rsa.pub cluster
+	ssh-copy-id -i ~/.ssh/id_rsa.pub cluster
 	```
 
 4. Test if you can now access given host without password.
