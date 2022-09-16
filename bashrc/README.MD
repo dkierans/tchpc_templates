@@ -29,9 +29,19 @@ fi
 ```
 Be careful not to remove the initial `if` statement which sources the global bashrc. Only add custom options below in the area of user specific aliases and functions.
 
-Trivial Example:
+
+
+Examples
+===
+Trivial Example
+---  
 Suppose you want to your terminal to warmly welcome you when you login. You can append the following line to the file:
 ```bash
 echo "Hello $USER, I hope you're having a fabulous day."
 ```
 Now log out and log back in to source your new `.bashrc` file. Or you can do so manually using `source ~/.bashrc`.
+
+
+
+Currently working from
+https://www.journaldev.com/41479/bashrc-file-in-linux

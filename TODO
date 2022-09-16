@@ -6,6 +6,13 @@
 
 1. Bashrc section
 2. Incoming HPC Students - Useful tips & tricks
-   1. Bashrc
-   2. Version control (git)
-   3. Installing software from source (eg discord)
+	- Bashrc
+	- Version control (git)
+	- Installing software from source (eg discord or matlab)
+	- Useful software 
+		Windows Terminal
+		GUI Editor (eg VS Code and its many extensions)
+		WSL / homebrew?
+		Terminal editor (eg vim or emacs)	
+		etc
+
