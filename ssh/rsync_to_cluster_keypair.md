@@ -1,8 +1,17 @@
-Instructions are quite simple in order to avoid typing password when ssh-ing to a compute host (eg kelvin/lonsdale) from rsync.
+<!--
+@file README.md
+@brief User friendly instructions for setting up quality of life ssh features.
+@author D.Kierans (dkierans@tcd.ie)
+@version 1.1
+@date 2022-09-16
+-->
+
+
+Instructions are quite simple. Used to avoid typing password when ssh-ing to a compute host (eg kelvin/lonsdale) from rsync.
 
 1. Login to rsync
 
-2. Type the following to create an ssh key-pair
+2. Type the following to create an ssh key-pair for rsync.
 	```bash
 	ssh-keygen 	
 	```
@@ -11,7 +20,7 @@ Instructions are quite simple in order to avoid typing password when ssh-ing to 
 	c. Key's randomart image should print if successful.
 
 3. Copy *public key* to compute host. 
-Replace `cluster` with name of host (eg kelvin)
+Replace `cluster` with name of cluster (eg kelvin).
 Replace `id_rsa.pub` with `your_filename.pub` if non-default filename used above.
 	```bash
 	ssh-copy-id ~/.ssh/id_rsa.pub cluster

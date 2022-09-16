@@ -1,3 +1,11 @@
+<!--
+@file README.md
+@brief User friendly instructions for setting up quality of life ssh features.
+@author D.Kierans (dkierans@tcd.ie)
+@version 1.1
+@date 2022-09-16
+-->
+
 # tchpc_templates/ssh
 
 This folder provides useful sample files for using ssh to connect to Research IT clusters. Files include:
@@ -5,6 +13,7 @@ This folder provides useful sample files for using ssh to connect to Research IT
 	Sample configuration file for connecting to rsync and cluster nodes.
  - rsync_to_cluster_keypair.md:
 	Setup ssh keypair such that you can login to cluster node from rsync without typing password.
+
 
 ## config
 Allows users to connect to rsync using "ssh rsync" instead of "ssh -l username rsync.tchpc.tcd.ie"
