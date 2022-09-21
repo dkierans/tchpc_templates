@@ -1,5 +1,4 @@
-tchpc_templates/slurm
-===
+# tchpc_templates/slurm
 
 This folder provides useful sample files for queuing jobs using SLURM on Research IT clusters. Click here to read more about [SLURM](https://slurm.schedmd.com/documentation.html). Files include:
  - `minimal_mpi_template.sh`:  
@@ -13,8 +12,7 @@ This folder provides useful sample files for queuing jobs using SLURM on Researc
 	* Write information about batch script to `slurm-[#id].out` file (date, number of procs, etc).
 
 
-Usage
----
+## Usage
 Adjusting the template files to suit your requirement.
 1. Create copy of preferred template file (eg `example_sub.sh`).
 2. Adjust `#SBATCH` parameters at top of file to suit your allocation requirements.
