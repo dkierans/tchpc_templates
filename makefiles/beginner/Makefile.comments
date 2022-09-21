@@ -1,0 +1,21 @@
+# Make variable for compiler. See better examples of variables in more advanced folders
+CC=gcc
+
+# `make` -> calls first target by default, in this case suggestively titled default
+# 	calls main.exe target
+default: main.exe
+
+# main.exe target dependent on main.c and Makefile. Will re-build if either file is updated
+main.exe: main.c Makefile
+	${CC} main.c -o main.exe 
+	# rebuild instructions called by bash^
+
+
+# Useful to have clean command for each Makefile
+# 	`make clean` -> calls rm command to remove exe file
+clean:
+	rm main.exe
+
+
+# Phony targets, don't actually have files. Tells make not to look for file named default or clean
+.PHONY: default clean
