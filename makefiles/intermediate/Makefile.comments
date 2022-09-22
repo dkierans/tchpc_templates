@@ -1,0 +1,23 @@
+## COMPILER VARIABLES
+CC 			= gcc
+LIBS 		= -fopenmp
+CFLAGS 		= -O2 -Wall -Wextra
+
+## FILENAME VARIABLES
+EXES = 		main1.exe main2.exe
+
+## TARGET: {DEPENDENCIES}
+default: ${EXES}
+
+# Make pattern matching
+# target 'main1'.exe -> dependency 'main1'.c for each in ${EXES}
+${EXES}: %.exe : %.c Makefile
+	${CC} ${LIBS} ${CFLAGS} $< -o $@
+
+# Make built-in variable RM
+# ${RM} := rm -f
+clean:
+	${RM} ${EXES}
+
+## PHONY TARGETS
+.PHONY: default clean

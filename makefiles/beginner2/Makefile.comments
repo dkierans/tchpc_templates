@@ -1,0 +1,23 @@
+## COMPILER VARIABLES
+# -fopenmp := links omp library (-qopenmp for intel compilers)
+# -O2 := level 2 compiler optimization (range 0-3), -O0 gcc default
+# -Wall -Wextra := Enables extra compiler warnings
+CC 			= gcc
+LIBS 		= -fopenmp
+CFLAGS 		= -O2 -Wall -Wextra
+
+## TARGET: {DEPENDENCIES}
+default: main.exe
+
+## Common make keywords
+# $@ := target (main.exe)
+# $< := first dependency (main.c)
+# $^ := all dependencies (main.c Makefile)
+main.exe: main.c Makefile
+	${CC} ${LIBS} ${CFLAGS} $< -o $@
+
+clean:
+	rm main.exe
+
+## PHONY TARGETS
+.PHONY: default clean

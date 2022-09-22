@@ -1,11 +1,13 @@
 ## VARIABLES
-CC=gcc
+CC 			= gcc
+LIBS 		= -fopenmp
+CFLAGS 		= -O2 -Wall -Wextra
 
 ## TARGET: {DEPENDENCIES}
 default: main.exe
 
 main.exe: main.c Makefile
-	${CC} main.c -o main.exe 
+	${CC} ${LIBS} ${CFLAGS} $< -o $@
 
 clean:
 	rm main.exe
