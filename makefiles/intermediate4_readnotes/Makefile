@@ -7,12 +7,6 @@ DEP_FLAGS	= -MMD -MP
 
 MPICC		= mpicc
 
-
-## FILE DIRECTORY VARIABLES
-SRC_DIR = 	src
-OBJ_DIR = 	obj
-INC_DIR = 	inc
-
 ## FILENAME VARIABLES
 # Dependency files for make
 EXES = 		main.exe
